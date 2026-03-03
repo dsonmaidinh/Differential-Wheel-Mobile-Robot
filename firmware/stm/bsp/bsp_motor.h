@@ -21,6 +21,7 @@
 #define BSP_MOTOR_PI                    PI
 #define BSP_MOTOR_ENCODER_PPR			MOTOR_ENCODER_PPR
 #define BSP_MOTOR_COUNT 				MOTOR_COUNT
+#define BSP_WHEEL_TRACK					WHEEL_TRACK_FACTOR
 
 /* Public enumerate/structure ----------------------------------------- */
 typedef enum
@@ -41,7 +42,7 @@ typedef struct
 	float cur_omega;
 	float vel_conversion_factor;
 
-	int32_t  cntPos;          // Số vòng quay (Revolution Count)
+	float  cntPos;          // Số vòng quay (Revolution Count)
 	int16_t  cntValue;        // Giá trị xung hiện tại (0 đến ARR)
 	int16_t  cntVel;          // Vận tốc (tính bằng delta ticks)
 	uint16_t encoderPPR;
@@ -51,6 +52,9 @@ typedef struct
 	uint16_t lastCounterVal;
 	uint32_t lastTime;
 	uint32_t timer_arr;       // Lưu giá trị ARR để xử lý tràn
+
+	float d;
+	float total_distance;
 } bsp_motor_data_t;
 
 /* Public macros ------------------------------------------------------ */
@@ -63,7 +67,11 @@ bsp_motor_err_t bsp_motor_find_params(void);
 
 bsp_motor_err_t bsp_motor_get_data(bsp_motor_id_t id, bsp_motor_data_t *p_data_out, float dt);
 
+bsp_motor_err_t bsp_motor_get_data_kinematics(bsp_motor_id_t id, float dt, float *omega, float *d);
+
 float bsp_motor_get_vel(bsp_motor_id_t id, float dt);
+
+float bsp_motor_get_round(bsp_motor_id_t id, float dt);
 
 bsp_motor_err_t bsp_motor_set_vel(bsp_motor_id_t id, int16_t pwm);
 

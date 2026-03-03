@@ -46,6 +46,8 @@ pid_motor_err_t mw_pid_set_params(pid_t *pid, float kp, float ki, float kd, floa
 
 int16_t mw_pid_vel(pid_t *pid, float desired_value, float current_value, float dt);
 
+int16_t mw_pid_pos(pid_t *pid, float kp, float ki, float kb, float desired_value, float current_value, float dt);
+
 #endif /* INC_MW_CONTROLLER_H_ */
 
 /* End of file -------------------------------------------------------- */

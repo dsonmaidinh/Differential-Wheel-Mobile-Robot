@@ -70,12 +70,13 @@ typedef stream_rx_path_config_t 		path_config_t;
 
 /* Private macros ----------------------------------------------------- */
 /* Public variables --------------------------------------------------- */
-kinematics_t kinematics;
+extern agv_t robot;
 
 /* Private variables -------------------------------------------------- */
 uint8_t shape = MW_KINEMATICS_CIRCLE;
 trajectory_params_t 				trajectory_handle;
 path_params_t						path_handle;
+kinematics_t kinematics;
 
 /* Private function prototypes ---------------------------------------- */
 static inline void set_trajectory(uint8_t *params);
@@ -155,37 +156,57 @@ void mw_kinematics_inverse(float *target_omega_l, float *target_omega_r)
     *(target_omega_l) = v_linear_component - w_angular_component;
 }
 
-void mw_kinematics_forward(mw_kinematics_data_t *me, float dt, float *cur_omega_l, float *cur_omega_r)
+void mw_kinematics_forward(mw_kinematics_data_t *me, float dt, float *cur_omega_l, float *cur_omega_r, float d_l, float d_r)
 {
-	// v = R * (wR + wL) / 2
+#if MW_KINEMATICS_USE_ODOMETRY
+	// 1. ODOMETRY: Tính toán sự thay đổi trong 10ms (Quãng đường & Góc)
+	float delta_s     = (d_l + d_r) / 2.0f;
+	float delta_theta = (d_r - d_l) / MW_KINEMATIC_WHEEL_BASE;
+
+	// Dùng phương pháp Runge-Kutta Midpoint để chống trôi quỹ đạo cong
+	float theta_mid   = kinematics.actual.theta + (delta_theta / 2.0f);
+
+	// 2. CẬP NHẬT TỌA ĐỘ VỊ TRÍ (Thay thế hoàn toàn mớ tích phân v*dt cũ)
+	me->Px += delta_s * cosf(theta_mid);
+	me->Py += delta_s * sinf(theta_mid);
+	kinematics.actual.theta += delta_theta;
+	normalize_angle(&kinematics.actual.theta); // Khóa góc trong khoảng [-PI, PI]
+
+	// 3. TÍNH VẬN TỐC THỰC TẾ (Dùng để feedback cho PID hoặc EKF)
+	kinematics.actual.velocity = delta_s / dt;
+	kinematics.actual.omega    = delta_theta / dt;
+
+#else
+    // v = R * (wR + wL) / 2
 	// w = R * (wR - wL) / Base
-    float motor_omega_r = *(cur_omega_r);
-    float motor_omega_l = *(cur_omega_l);
-    float theta 		= kinematics.actual.theta;
-    float v 			= (MW_KINEMATIC_WHEEL_RADIUS * (motor_omega_r + motor_omega_l)) * 0.5f;
-    float w 			= (MW_KINEMATIC_WHEEL_RADIUS * (motor_omega_r - motor_omega_l)) / MW_KINEMATIC_WHEEL_BASE;
+	float motor_omega_r = *(cur_omega_r);
+	float motor_omega_l = *(cur_omega_l);
+	float theta 		= kinematics.actual.theta;
+	float v 			= (MW_KINEMATIC_WHEEL_RADIUS * (motor_omega_r + motor_omega_l)) * 0.5f;
+	float w 			= (MW_KINEMATIC_WHEEL_RADIUS * (motor_omega_r - motor_omega_l)) / MW_KINEMATIC_WHEEL_BASE;
 
-    // debug
-    kinematics.actual.velocity 	= v;
-    kinematics.actual.omega 	= w;
+	// debug
+	kinematics.actual.velocity 	= v;
+	kinematics.actual.omega 	= w;
 
-    if ((fabsf(w) < 1e-6f))
-    {
-        me->Px 		+= v * cosf(theta) * dt;
-        me->Py		+= v * sinf(theta) * dt;
-        kinematics.actual.theta 	+= w * dt;
-    }
-    else
-    {
-        float R = v / w;
-        float d_theta = w * dt;
-        float theta_new = theta + d_theta;
-        me->Px += R * (sinf(theta_new) - sinf(theta));
-        me->Py -= R * (cosf(theta_new) - cosf(theta));
-        kinematics.actual.theta 	+= w * dt;
-    }
+	if ((fabsf(w) < 1e-6f))
+	{
+		me->Px 		+= v * cosf(theta) * dt;
+		me->Py		+= v * sinf(theta) * dt;
+		kinematics.actual.theta 	+= w * dt;
+	}
+	else
+	{
+		float R = v / w;
+		float d_theta = w * dt;
+		float theta_new = theta + d_theta;
+		me->Px += R * (sinf(theta_new) - sinf(theta));
+		me->Py -= R * (cosf(theta_new) - cosf(theta));
+		kinematics.actual.theta 	+= w * dt;
+	}
 
-    normalize_angle(&kinematics.actual.theta);
+	normalize_angle(&kinematics.actual.theta);
+#endif
 }
 
 /* Private definitions ------------------------------------------------ */
@@ -413,7 +434,7 @@ static inline void generate_path_trajectory(mw_kinematics_data_t *me, float t)
 	float dy = me->Pdy - me->Py;
 	float dist_to_goal = sqrtf(dx * dx + dy * dy);
 
-	float acceptance_radius = 0.2f;
+	float acceptance_radius = 0.01f;
 
 	if (dist_to_goal < acceptance_radius) {
 		// Logic chuyển điểm

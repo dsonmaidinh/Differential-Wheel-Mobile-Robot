@@ -35,6 +35,12 @@ typedef enum
 	APP_NONE 		= BSP_ESP_CMD_NONE,
 } app_state_t;
 
+typedef enum
+{
+	TEST_VELOCITY,
+	TEST_POSITION,
+} motor_test_mode_t;
+
 typedef mw_kinematics_data_t app_kinematics_data_t;
 typedef error_info_t app_error_info_t;
 
@@ -69,15 +75,23 @@ app_state_t 			global_state = APP_STOP;
 //--- Kinematics
 app_kinematics_data_t	global_kinematics_data;
 uint32_t time_pre = 0;
-float target_omega_l = 0;
-float target_omega_r = 0;
+float target_omega_l = 0.0;
+float target_omega_r = 0.0;
 float global_t = 0.0f;
 bool is_run = false;
 
 //--- Motor
 float left_vel	= 0;
 float right_vel	= 0;
+float target_round_l = 0.0;
+float target_round_r = 0.0;
+float left_round	= 0;
+float right_round	= 0;
 bool is_test = 0;
+motor_test_mode_t test_mode = TEST_VELOCITY;
+
+//--- Test Odometry
+agv_t robot = {0};
 
 /* Private variables -------------------------------------------------- */
 static int app_motion_task_id		= -1;
@@ -180,8 +194,10 @@ static inline void app_task_motion_coltrol(void *arg)
 
 	mw_kinematics_inverse(&target_omega_l, &target_omega_r);
 
-	float current_omega_l = bsp_motor_get_vel(BSP_MOTOR_LEFT, dt);
-	float current_omega_r = bsp_motor_get_vel(BSP_MOTOR_RIGHT, dt);
+	float current_omega_l, d_l;
+	float current_omega_r, d_r;
+	bsp_motor_get_data_kinematics(BSP_MOTOR_LEFT, dt, &current_omega_l, &d_l);
+	bsp_motor_get_data_kinematics(BSP_MOTOR_RIGHT, dt, &current_omega_r, &d_r);
 
 	pwm_left 	= mw_pid_vel(&pid_left, target_omega_l, current_omega_l, dt);
 	pwm_right 	= mw_pid_vel(&pid_right, target_omega_r, current_omega_r, dt);
@@ -189,30 +205,88 @@ static inline void app_task_motion_coltrol(void *arg)
 	bsp_motor_set_vel(BSP_MOTOR_LEFT, pwm_left);
 	bsp_motor_set_vel(BSP_MOTOR_RIGHT, pwm_right);
 
-	mw_kinematics_forward(&global_kinematics_data, dt, &current_omega_l, &current_omega_r);
+	mw_kinematics_forward(&global_kinematics_data, dt, &current_omega_l, &current_omega_r, d_l, d_r);
 
 	bsp_esp_send_data((uint8_t *) &global_kinematics_data);
 }
 
+uint8_t lock_pwm = 0;
 static inline void app_task_test_motor(void *arg)
 {
+	switch(test_mode)
+	{
+		case TEST_VELOCITY:
+			{
+				static uint32_t start_time = 0;
 
-	uint32_t time_now = HAL_GetTick();
+				uint32_t time_now = HAL_GetTick();
 
-	float dt = (float)(time_now - time_pre) / 1000.0f;
-	if (dt <= 0.0f || dt > 0.05f) dt = 0.01f;
-	time_pre = time_now;
+				if (start_time == 0)
+				{
+					start_time = time_now;
+				}
 
-	global_t += dt;
+				float dt = (float)(time_now - time_pre) / 1000.0f;
+				if (dt <= 0.0f || dt > 0.05f) dt = 0.01f;
+				time_pre = time_now;
 
-	left_vel  = bsp_motor_get_vel(BSP_MOTOR_LEFT, dt);
-	right_vel = bsp_motor_get_vel(BSP_MOTOR_RIGHT, dt);
+				global_t += dt;
 
-	pwm_left 	= mw_pid_vel(&pid_left, target_omega_l, left_vel, dt);
-	pwm_right 	= mw_pid_vel(&pid_right, target_omega_r, right_vel, dt);
+				left_vel  = bsp_motor_get_vel(BSP_MOTOR_LEFT, dt);
+				right_vel = bsp_motor_get_vel(BSP_MOTOR_RIGHT, dt);
 
-	bsp_motor_set_vel(BSP_MOTOR_LEFT, pwm_left);
-	bsp_motor_set_vel(BSP_MOTOR_RIGHT, pwm_right);
+				if ((time_now - start_time) >= 2000)
+				{
+					target_omega_l = 4.0f;
+					target_omega_r = 4.0f;
+				}
+
+				pwm_left 	= mw_pid_vel(&pid_left, target_omega_l, left_vel, dt);
+				pwm_right 	= mw_pid_vel(&pid_right, target_omega_r, right_vel, dt);
+
+				bsp_motor_set_vel(BSP_MOTOR_LEFT, pwm_left);
+				bsp_motor_set_vel(BSP_MOTOR_RIGHT, pwm_right);
+
+				break;
+			}
+		case TEST_POSITION:
+			{
+				static uint32_t start_time = 0;
+
+				uint32_t time_now = HAL_GetTick();
+
+				if (start_time == 0)
+				{
+					start_time = time_now;
+				}
+
+				float dt = (float)(time_now - time_pre) / 1000.0f;
+				if (dt <= 0.0f || dt > 0.05f) dt = 0.01f;
+				time_pre = time_now;
+
+				global_t += dt;
+
+				left_round  = bsp_motor_get_round(BSP_MOTOR_LEFT, dt);
+				right_round = bsp_motor_get_round(BSP_MOTOR_RIGHT, dt);
+
+				if ((time_now - start_time) >= 2000)
+				{
+					target_round_l = 1080.0f;
+					target_round_r = 1080.0f;
+				}
+
+				pwm_left 	= mw_pid_pos(&pid_left, 15, 100, 10, target_round_l, left_round, dt);
+				pwm_right 	= mw_pid_pos(&pid_right, 15, 100, 10, target_round_r, right_round, dt);
+
+				if(!lock_pwm)
+				{
+					bsp_motor_set_vel(BSP_MOTOR_LEFT, pwm_left);
+					bsp_motor_set_vel(BSP_MOTOR_RIGHT, pwm_right);
+				}
+				break;
+			}
+	}
+
 
 }
 
@@ -220,8 +294,8 @@ static inline void set_up_test_motor_task()
 {
 	is_test = !is_test;
 	// Reset
-	target_omega_r = 0;
-	target_omega_l = 0;
+	target_omega_r = 1.0;
+	target_omega_l = 1.0;
 	time_pre = HAL_GetTick();
 	global_t = 0.0f;
 

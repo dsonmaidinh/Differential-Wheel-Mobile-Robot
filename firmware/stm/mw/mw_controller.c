@@ -76,5 +76,44 @@ int16_t mw_pid_vel(pid_t *pid, float desired_value, float current_value, float d
     pidout = (int16_t) pid_sat;
     return pidout;
 }
+
+int16_t mw_pid_pos(pid_t *pid, float kp, float ki, float kb, float desired_value, float current_value, float dt)
+{
+	CHECK_PARAM((pid == NULL), MW_CONTROLLER_ERR_PARAM);
+
+    float pidterm = 0, pid_sat = 0;
+    float ek;
+    float UP, UI;
+
+    int16_t pidout;
+    if(ki == 0) kb = 0;
+
+    ek = desired_value - current_value;
+
+    UP = kp * ek;
+    UI = pid->UI_pre + ki * ek * dt + kb * pid->e_sat * dt;
+    pidterm = UP + UI;
+
+    /* Saturation */
+    if(pidterm >= MW_PID_MAX_OUTPUT) {
+        pid_sat = MW_PID_MAX_OUTPUT;
+        pid->e_sat = MW_PID_MAX_OUTPUT - pidterm;
+    }
+    else if (pidterm <= -MW_PID_MAX_OUTPUT) {
+        pid_sat = -MW_PID_MAX_OUTPUT;
+        pid->e_sat = -MW_PID_MAX_OUTPUT - pidterm;
+    }
+    else {
+        pid_sat = pidterm;
+        pid->e_sat = 0;
+    }
+
+    pid->ek_pre = ek;
+    pid->UI_pre = UI;
+
+    pidout = (int16_t) pid_sat;
+    return pidout;
+}
+
 /* Private definitions ------------------------------------------------ */
 /* End of file -------------------------------------------------------- */

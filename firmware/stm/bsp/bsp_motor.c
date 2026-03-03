@@ -96,7 +96,7 @@ bsp_motor_err_t bsp_motor_find_params(void)
 
 bsp_motor_err_t bsp_motor_get_data(bsp_motor_id_t id, bsp_motor_data_t *p_data_out, float dt)
 {
-     CHECK_PARAM((id < BSP_MOTOR_COUNT || p_data_out != NULL), BSP_MOTOR_ERR_PARAM);
+     CHECK_PARAM((id >= BSP_MOTOR_COUNT || p_data_out != NULL), BSP_MOTOR_ERR_PARAM);
 
      bsp_motor_cal_vel(id, dt);
 
@@ -105,10 +105,28 @@ bsp_motor_err_t bsp_motor_get_data(bsp_motor_id_t id, bsp_motor_data_t *p_data_o
      return BSP_MOTOR_OK;
 }
 
+bsp_motor_err_t bsp_motor_get_data_kinematics(bsp_motor_id_t id, float dt, float *omega, float *d)
+{
+     CHECK_PARAM((id >= BSP_MOTOR_COUNT ), BSP_MOTOR_ERR_PARAM);
+
+     bsp_motor_cal_vel(id, dt);
+
+     *omega = motors[id].data.cur_omega;
+     *d		= motors[id].data.d;
+
+     return BSP_MOTOR_OK;
+}
+
 float bsp_motor_get_vel(bsp_motor_id_t id, float dt)
 {
 	bsp_motor_cal_vel(id, dt);
 	return motors[id].data.cur_omega;
+}
+
+float bsp_motor_get_round(bsp_motor_id_t id, float dt)
+{
+	bsp_motor_cal_vel(id, dt);
+	return motors[id].data.cntPos * 360.0f;
 }
 
 bsp_motor_err_t bsp_motor_set_vel(bsp_motor_id_t id, int16_t pwm)
@@ -142,8 +160,13 @@ static inline void bsp_motor_get_counter(bsp_motor_id_t id)
 
 	motors[id].data.cntVel = delta;
 
-	if (motors[id].data.encoderPPR > 0) {
-		motors[id].data.cntPos = (int32_t)(motors[id].data.totalTicks / (float)BSP_MOTOR_ENCODER_PPR);
+	motors[id].data.d = (float)delta*(float)BSP_WHEEL_TRACK;
+
+	motors[id].data.total_distance += motors[id].data.d;
+
+	if (BSP_MOTOR_ENCODER_PPR > 0)
+	{
+		motors[id].data.cntPos = (float)motors[id].data.totalTicks / (float)BSP_MOTOR_ENCODER_PPR;
 	}
 
 	motors[id].data.lastCounterVal = currentCounter;

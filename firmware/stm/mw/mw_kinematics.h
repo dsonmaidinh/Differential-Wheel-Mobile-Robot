@@ -24,6 +24,7 @@
 #define MW_KINEMATICS_KW 				KW
 #define MW_KINEMATICS_SAFETY_FACTOR 	SAFETY_FACTOR
 #define MW_KINEMATICS_PI				PI
+#define MW_KINEMATICS_USE_ODOMETRY		USE_ODOMETRY
 
 /* Public enumerate/structure ----------------------------------------- */
 typedef enum
@@ -44,6 +45,12 @@ typedef enum
 
 typedef stream_tx_data_t 	mw_kinematics_data_t;
 
+typedef struct {
+    float x;
+    float y;
+    float theta;
+} agv_t;
+
 /* Public macros ------------------------------------------------------ */
 /* Public variables --------------------------------------------------- */
 /* Public function prototypes ----------------------------------------- */
@@ -55,7 +62,7 @@ void mw_kinematics_generate_trajectory(mw_kinematics_data_t *me, float t);
 
 void mw_kinematics_inverse(float *target_omega_l, float *target_omega_r);
 
-void mw_kinematics_forward(mw_kinematics_data_t *me, float dt, float *cur_omega_l, float *cur_omega_r);
+void mw_kinematics_forward(mw_kinematics_data_t *me, float dt, float *cur_omega_l, float *cur_omega_r, float d_l, float d_r);
 
 #endif /* INC_MW_KINEMATICS_H_ */
 

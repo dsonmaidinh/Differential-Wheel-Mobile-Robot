@@ -1,4 +1,4 @@
-/**
+ /**
  * @file       sys_config.h
  * @copyright  [Your Copyright]
  * @license    [Your License]
@@ -25,13 +25,15 @@
 #define KV 							6.0f
 #define KW 							10.0f
 #define SAFETY_FACTOR 				0.95f
-#define PI							3.1415926535f
+#define PI							3.14159265358979323846f
+#define USE_ODOMETRY				true
 // Controller
 #define PID_MAX_OUTPUT 				1000.0f
 // Motor
 #define MOTOR_MAX_OMEGA				12.0f
-#define MOTOR_ENCODER_PPR			2059u	// x4
+#define MOTOR_ENCODER_PPR			1980u	// x4
 #define MOTOR_COUNT 				2
+#define WHEEL_TRACK_FACTOR			(2.0f * PI * WHEEL_RADIUS) / MOTOR_ENCODER_PPR
 
 /* Public enumerate/structure ----------------------------------------- */
 typedef enum
