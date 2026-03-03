@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Change Component Designator: OldDesignator=ESP_FLASH NewDesignator=ESP_FLASH1
+Change Component Designator: OldDesignator=STM_FLASH NewDesignator=STM_FLASH1
+Change Component Description : Designator=E1 Old Description=EMI Ferrite Chip Bead, 0805, 800MA, 120Ohms @100MHz, DCR Max 0.150Ohm New Description=EMI Ferrite Chip Bead, 0805, 800MA, 120Ohms @100MHz, DCR Max 0.150Ohm | Laird Performance Materials LI0805H121R-10

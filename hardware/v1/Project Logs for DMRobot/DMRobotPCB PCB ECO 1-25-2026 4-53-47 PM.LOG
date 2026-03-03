@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=MCU_SWDIO Pin=STM_FLASH1-2
+Removed Pin From Net: NetName=MCU_SWCLK Pin=STM_FLASH1-3
+Removed Pin From Net: NetName=GND Pin=STM_FLASH1-4
+Added Pin To Net: NetName=MCU_SWDIO Pin=STM_FLASH1-1
+Added Pin To Net: NetName=MCU_SWCLK Pin=STM_FLASH1-2
+Added Pin To Net: NetName=GND Pin=STM_FLASH1-3

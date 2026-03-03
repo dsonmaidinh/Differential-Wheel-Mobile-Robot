@@ -1,0 +1,14 @@
+# Các file lịch sử và sao lưu của Altium
+History/
+Project\ Logs*/
+__Preview/
+
+# Các file tạm và file mở rộng không cần thiết
+*.PcbDoc.htm
+*.Constraint
+*.Txt
+*.Canvas
+
+# Các file kết quả đầu ra (Outputs) - Thường sẽ generate lại khi cần
+Project\ Outputs*/
+Default\ Configuration/

@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=EN Pin=C18-1
+Removed Pin From Net: NetName=GND Pin=C18-2
+Removed Pin From Net: NetName=EN Pin=R9-1
+Removed Pin From Net: NetName=3.3V Pin=R9-2
+Removed Member From Class: ClassName=DMRobotSchematic Member=R24
+Change Component Designator: OldDesignator=C19 NewDesignator=C18
+Change Component Designator: OldDesignator=C20 NewDesignator=C19
+Change Component Designator: OldDesignator=C21 NewDesignator=C20
+Change Component Designator: OldDesignator=C22 NewDesignator=C21
+Change Component Designator: OldDesignator=C23 NewDesignator=C22
+Change Component Designator: OldDesignator=C24 NewDesignator=C23
+Change Component Designator: OldDesignator=C25 NewDesignator=C24
+Change Component Designator: OldDesignator=C26 NewDesignator=C25
+Change Component Designator: OldDesignator=C27 NewDesignator=C26
+Change Component Designator: OldDesignator=C28 NewDesignator=C27
+Change Component Designator: OldDesignator=C29 NewDesignator=C28
+Change Component Designator: OldDesignator=C30 NewDesignator=C29
+Change Component Designator: OldDesignator=C31 NewDesignator=C30
+Change Component Designator: OldDesignator=C32 NewDesignator=C31
+Change Component Designator: OldDesignator=C33 NewDesignator=C32
+Change Component Designator: OldDesignator=C34 NewDesignator=C33
+Change Component Designator: OldDesignator=C35 NewDesignator=C34
+Change Component Designator: OldDesignator=H1 NewDesignator=H2
+Change Component Designator: OldDesignator=H2 NewDesignator=H3
+Change Component Designator: OldDesignator=H3 NewDesignator=H4
+Change Component Designator: OldDesignator=H4 NewDesignator=H5
+Change Component Designator: OldDesignator=H5 NewDesignator=H6
+Change Component Designator: OldDesignator=R10 NewDesignator=R9
+Change Component Designator: OldDesignator=R11 NewDesignator=R10
+Change Component Designator: OldDesignator=R12 NewDesignator=R11
+Change Component Designator: OldDesignator=R13 NewDesignator=R12
+Change Component Designator: OldDesignator=R14 NewDesignator=R13
+Change Component Designator: OldDesignator=R15 NewDesignator=R14
+Change Component Designator: OldDesignator=R16 NewDesignator=R15
+Change Component Designator: OldDesignator=R17 NewDesignator=R16
+Change Component Designator: OldDesignator=R18 NewDesignator=R17
+Change Component Designator: OldDesignator=R19 NewDesignator=R18
+Change Component Designator: OldDesignator=R20 NewDesignator=R19
+Change Component Designator: OldDesignator=R21 NewDesignator=R20
+Change Component Designator: OldDesignator=R22 NewDesignator=R21
+Change Component Designator: OldDesignator=R23 NewDesignator=R22
+Change Component Designator: OldDesignator=R24 NewDesignator=R23
+Added Component: Designator=C15(tu 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004563"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 33p 10% 50V"; VariantName = "[No Variations]"
+Added Component: Designator=H1(XH2.54M-4)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001285"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 4P XH2.54-4P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=Y1(XTAL_CAA-12.000-20-3050-X-R)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CAA-12.000-20-3050-X-R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ESP_TX Pin=H1-2
+Added Pin To Net: NetName=ESP_RX Pin=H1-3
+Added Pin To Net: NetName=GND Pin=H1-4
+Change Net Name : Old Net Name=NetC24_1 New Net Name=NetC23_1
+Change Net Name : Old Net Name=NetR17_2 New Net Name=NetR16_2
+Change Net Name : Old Net Name=NetR23_2 New Net Name=NetR22_2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C15 33pF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C16 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C17 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C19 106
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C21 106
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C23 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C24 22uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C26 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C28 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C29 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H6 ENCODER
+Added Member To Class: ClassName=DMRobotSchematic Member=Component Y1 CAA-12.000-20-3050-X-R

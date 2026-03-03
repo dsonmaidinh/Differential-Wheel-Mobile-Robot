@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=8.4V Pin=Q1-2
+Added Pin To Net: NetName=ESP_RX Pin=U1-53
+Added Pin To Net: NetName=ESP_TX Pin=U1-54

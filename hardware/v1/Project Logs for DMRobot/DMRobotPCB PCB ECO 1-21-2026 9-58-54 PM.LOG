@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=VIN Pin=F1-1
+Change Component Designator: OldDesignator=BT1 NewDesignator=BT2
+Change Component Designator: OldDesignator=BT2 NewDesignator=BT3
+Change Component Designator: OldDesignator=BT3 NewDesignator=BT4
+Change Component Designator: OldDesignator=C3 NewDesignator=C4
+Change Component Designator: OldDesignator=C4 NewDesignator=C5
+Change Component Designator: OldDesignator=C5 NewDesignator=C3
+Change Component Designator: OldDesignator=C6 NewDesignator=C7
+Change Component Designator: OldDesignator=C7 NewDesignator=C6
+Change Component Designator: OldDesignator=C28 NewDesignator=C29
+Change Component Designator: OldDesignator=C29 NewDesignator=C30
+Change Component Designator: OldDesignator=C30 NewDesignator=C28
+Added Component: Designator=BT1(CONG TAC BAP BENH)
+Added Component: Designator=R18(tro smd 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH005314"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? 0805 5% 30k"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=BT1-1
+Added Pin To Net: NetName=GND Pin=R18-1
+Added Pin To Net: NetName=NetR18_2 Pin=R18-2
+Added Pin To Net: NetName=NetBT1_2 Pin=BT1-2
+Added Pin To Net: NetName=NetBT1_2 Pin=F1-1
+Added Net: Name=NetBT1_2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component BT4 Nut Nhan 2 Chan SMD 3x6x2.5
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C12 332
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C13 226
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C15 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C16 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C21 22uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C26 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C28 22pF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C30 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C31 22pF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H1 Header 4P 2.54 Duc Thang
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H3 ENCODER
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H4 LOADER ESSP32
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R5 220
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R7 6.8k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R18 30k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U4 DRV8871DDARQ1

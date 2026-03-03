@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=U2 NewDesignator=U3
+Change Component Designator: OldDesignator=U3 NewDesignator=U4
+Change Component Designator: OldDesignator=U4 NewDesignator=U5
+Change Component Designator: OldDesignator=U5 NewDesignator=U6
+Added Component: Designator=U2(STM32_LQFP64)
+Added Pin To Net: NetName=8.4V Pin=Q1-2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U6 DRV8871DDARQ1

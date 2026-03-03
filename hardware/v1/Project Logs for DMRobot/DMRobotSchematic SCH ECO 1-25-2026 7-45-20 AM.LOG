@@ -1,0 +1,12 @@
+Change Component Designator: Old Designator=BOOT New Designator=BOOT1
+Change Component Designator: Old Designator=EN New Designator=EN1
+Change Component Designator: Old Designator=ESP New Designator=ESP1
+Change Component Designator: Old Designator=ESP_FLASH New Designator=ESP_FLASH1
+Change Component Designator: Old Designator=I2C New Designator=I1
+Change Component Designator: Old Designator=M1 New Designator=M2
+Change Component Designator: Old Designator=M2 New Designator=M1
+Change Component Designator: Old Designator=RST New Designator=RST1
+Change Component Designator: Old Designator=STM New Designator=STM1
+Change Component Designator: Old Designator=STM_FLASH New Designator=STM_FLASH1
+Change Component Designator: Old Designator=U1 New Designator=U2
+Change Component Designator: Old Designator=U? New Designator=U1

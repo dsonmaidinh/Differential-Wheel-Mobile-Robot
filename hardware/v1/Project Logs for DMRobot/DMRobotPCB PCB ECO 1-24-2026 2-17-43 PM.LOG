@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=8.4V Pin=Q1-2
+Removed Pin From Net: NetName=NetC10_1 Pin=Q1-3
+Added Pin To Net: NetName=NetC10_1 Pin=Q1-1
+Added Pin To Net: NetName=NetF1_2 Pin=Q1-2
+Added Pin To Net: NetName=8.4V Pin=Q1-3
+Change Net Color : Old Net Color=RGB(247, 120, 0) New Net Color=Default
+Change Net Color : Old Net Color=RGB(0, 0, 191) New Net Color=Default
+Added Member To Class: ClassName=DMRobotSchematic Member=Component J1 TYPE-C-31-M-12
+Added Member To Class: ClassName=DMRobotSchematic Member=Component MOD1 MOD MPU_6050
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U2 STM32F100xx_LQFP64

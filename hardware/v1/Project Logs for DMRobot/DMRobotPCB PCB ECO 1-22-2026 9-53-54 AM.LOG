@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=MOTOR1_IN2 Pin=U3-2
+Removed Pin From Net: NetName=MOTOR1_IN1 Pin=U3-3
+Added Pin To Net: NetName=MOTOR1_IN1 Pin=U3-2
+Added Pin To Net: NetName=MOTOR1_IN2 Pin=U3-3

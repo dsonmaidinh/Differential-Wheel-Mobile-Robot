@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=ENCODER2_IN1 Pin=H5-2
+Removed Pin From Net: NetName=ENCODER2_IN2 Pin=H5-3
+Added Pin To Net: NetName=ENCODER2_IN2 Pin=H5-2
+Added Pin To Net: NetName=ENCODER2_IN1 Pin=H5-3
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C23 104

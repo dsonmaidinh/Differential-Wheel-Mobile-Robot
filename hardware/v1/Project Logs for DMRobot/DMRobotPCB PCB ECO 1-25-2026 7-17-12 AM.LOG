@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=BT2 NewDesignator=EN
+Change Component Designator: OldDesignator=BT3 NewDesignator=BOOT
+Change Component Designator: OldDesignator=BT4 NewDesignator=RST
+Change Component Designator: OldDesignator=H1 NewDesignator=ESP_FLASH
+Change Component Designator: OldDesignator=H2 NewDesignator=STM_FLASH
+Change Component Designator: OldDesignator=MOD1 NewDesignator=I2C
+Added Member To Class: ClassName=DMRobotSchematic Member=Component E1 LI0805H121R-10
+Added Member To Class: ClassName=DMRobotSchematic Member=Component ESP ESP32 WROOM 32

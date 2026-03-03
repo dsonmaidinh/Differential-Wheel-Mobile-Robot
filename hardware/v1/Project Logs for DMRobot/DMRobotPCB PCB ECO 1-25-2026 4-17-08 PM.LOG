@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=ESP_FLASH NewDesignator=ESP_FLASH1
+Change Component Designator: OldDesignator=STM1 NewDesignator=STM32
+Change Component Designator: OldDesignator=STM_FLASH NewDesignator=STM_FLASH1
+Change Component Designator: OldDesignator=U1 NewDesignator=ESP32

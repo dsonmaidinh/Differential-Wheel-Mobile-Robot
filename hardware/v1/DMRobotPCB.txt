@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : D:\HOC\A\Altium\Du an\2026\DMRobot\DMRobot\DMRobotPCB.PcbDoc
+Date         : 1/26/2026
+Time         : 9:10:10 AM
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 99.17%
+    Connections, 241
+    Connections routed, 239
+    Connections remaining, 2
+count : 4

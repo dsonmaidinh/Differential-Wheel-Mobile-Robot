@@ -1,0 +1,45 @@
+Removed Pin From Net: NetName=3.3V Pin=C22-1
+Removed Pin From Net: NetName=GND Pin=C22-2
+Removed Pin From Net: NetName=GND Pin=C23-2
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Removed Pin From Net: NetName=GND Pin=ESP-GND
+Change Component Footprint: Designator=C21 Old Footprint=tu 0603 New Footprint=tu 0805
+Change Component Footprint: Designator=C22 Old Footprint=tu 0603 New Footprint=tu 0805
+Change Component Footprint: Designator=C23 Old Footprint=tu 0603 New Footprint=tu 0805
+Change component parameters: Designator = "C21" ("C21"); Footprint = "tu 0603"; UniqueID = "\YYLQIRLH" ("\YYLQIRLH")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH004553"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 106-10uF 10% 16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C22" ("C22"); Footprint = "tu 0603"; UniqueID = "\JCLKLAZK" ("\JCLKLAZK")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH004551"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 104-100nF 10% 50V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C23" ("C23"); Footprint = "tu 0603"; UniqueID = "\STRRAOVN" ("\STRRAOVN")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH004551"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 104-100nF 10% 50V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=3.3V Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=NetC23_2 Pin=C23-2
+Added Pin To Net: NetName=NetC23_2 Pin=U3-4
+Added Net: Name=NetC23_2

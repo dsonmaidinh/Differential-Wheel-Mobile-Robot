@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=GND Pin=C5-1
+Removed Pin From Net: NetName=3.3V Pin=C5-2
+Removed Pin From Net: NetName=3.3V Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=3.3V Pin=C8-1
+Removed Pin From Net: NetName=GND Pin=C8-2
+Removed Pin From Net: NetName=GND Pin=D2-1
+Removed Pin From Net: NetName=3.3V Pin=D2-2
+Removed Pin From Net: NetName=GND Pin=ESP1-1
+Removed Pin From Net: NetName=3.3V Pin=ESP1-2
+Removed Pin From Net: NetName=EN Pin=ESP1-3
+Removed Pin From Net: NetName=GND Pin=ESP1-15
+Removed Pin From Net: NetName=BOOT Pin=ESP1-25
+Removed Pin From Net: NetName=ESP_RX Pin=ESP1-27
+Removed Pin From Net: NetName=ESP_TX Pin=ESP1-28
+Removed Pin From Net: NetName=ESP_RXD0 Pin=ESP1-34
+Removed Pin From Net: NetName=ESP_TXD0 Pin=ESP1-35
+Removed Pin From Net: NetName=GND Pin=ESP1-38
+Removed Member From Class: ClassName=DMRobotSchematic Member=ESP1
+Change Component Designator: OldDesignator=C1 NewDesignator=C4
+Change Component Designator: OldDesignator=C2 NewDesignator=C5
+Change Component Designator: OldDesignator=C3 NewDesignator=C6
+Change Component Designator: OldDesignator=C4 NewDesignator=C7
+Change Component Designator: OldDesignator=C7 NewDesignator=C8
+Change Component Designator: OldDesignator=D1 NewDesignator=D2
+Added Component: Designator=C1(tu 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004551"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 104-100nF 10% 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(tu 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004557"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 222-2.2nF 10% 50V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(tu tantalum smd7343)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH008401"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? tantalum 107T-100uF 50V SMD7343"; VariantName = "[No Variations]"
+Added Component: Designator=D1(SOD123)
+Add component (AddParameter): Name = "BRAND"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "STOCK CODE"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SUPPLIER"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3.3V Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=3.3V Pin=C2-2
+Added Pin To Net: NetName=3.3V Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=3.3V Pin=D1-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=3.3V Pin=U1-2
+Added Pin To Net: NetName=EN Pin=U1-3
+Added Pin To Net: NetName=ESP_RX Pin=U1-10
+Added Pin To Net: NetName=ESP_TX Pin=U1-11
+Added Pin To Net: NetName=BOOT Pin=U1-27
+Added Pin To Net: NetName=ESP_RXD0 Pin=U1-36
+Added Pin To Net: NetName=ESP_TXD0 Pin=U1-37
+Added Pin To Net: NetName=GND Pin=U1-40
+Added Pin To Net: NetName=GND Pin=U1-41_1
+Added Pin To Net: NetName=GND Pin=U1-41_2
+Added Pin To Net: NetName=GND Pin=U1-41_3
+Added Pin To Net: NetName=GND Pin=U1-41_4
+Added Pin To Net: NetName=GND Pin=U1-41_5
+Added Pin To Net: NetName=GND Pin=U1-41_6
+Added Pin To Net: NetName=GND Pin=U1-41_7
+Added Pin To Net: NetName=GND Pin=U1-41_8
+Added Pin To Net: NetName=GND Pin=U1-41_9
+Added Member To Class: ClassName=DMRobotSchematic Member=Component M2 MOTOR
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U1 ESP32-S3-WROOM-1-N4

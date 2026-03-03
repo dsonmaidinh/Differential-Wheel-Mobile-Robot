@@ -1,0 +1,22 @@
+Change Component Designator: OldDesignator=R22 NewDesignator=R23
+Change Component Designator: OldDesignator=R23 NewDesignator=R24
+Change Component Description : Designator=E1 Old Description=EMI Ferrite Chip Bead, 0805, 800MA, 120Ohms @100MHz, DCR Max 0.150Ohm New Description=EMI Ferrite Chip Bead, 0805, 800MA, 120Ohms @100MHz, DCR Max 0.150Ohm | Laird Performance Materials LI0805H121R-10
+Added Component: Designator=R22(tro smd 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH005230"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? 0805 5% 0R"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetR22_2 New Net Name=NetR23_2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C1 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C2 22uf
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C3 100uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C4 100uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C5 100uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C6 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C7 103
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C8 106
+Added Member To Class: ClassName=DMRobotSchematic Member=Component D1 BZT52H-C3V3
+Added Member To Class: ClassName=DMRobotSchematic Member=Component D2 ZENER 3.3V
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R24 10k

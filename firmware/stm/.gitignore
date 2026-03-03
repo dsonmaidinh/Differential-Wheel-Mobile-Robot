@@ -1,0 +1,30 @@
+# Ignore everything
+*
+
+# But keep .ioc and linker script file
+!*.ioc
+!STM32F103RCTX_FLASH.ld
+!STM32F103RCTX_RAM.ld
+# And keep Core/ directory and all its contents
+!Core/
+!Core/**
+!app/
+!app/**
+!bsp/
+!bsp/**
+!Drivers/
+!Drivers/**
+!mw/
+!mw/**
+!sys/
+!sys/**
+!.project
+!.cproject
+!.settings/
+!Assets/
+!Assets/**
+
+# (Optional) Keep .gitignore files even in subfolders, for future use
+!.gitignore
+# Keep clang-format file
+!.clang-format

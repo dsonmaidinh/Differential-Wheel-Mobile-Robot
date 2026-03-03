@@ -1,0 +1,15 @@
+Added Component: Designator=MOD1(MOD MPU-6050)
+Added Pin To Net: NetName=3.3V Pin=MOD1-0
+Added Pin To Net: NetName=GND Pin=MOD1-1
+Added Pin To Net: NetName=NetF1_2 Pin=Q1-2
+Added Pin To Net: NetName=MCU_INT Pin=MOD1-7
+Added Pin To Net: NetName=MCU_INT Pin=U2-2
+Added Net: Name=MCU_INT
+Added Pin To Net: NetName=MCU_SCL Pin=MOD1-2
+Added Pin To Net: NetName=MCU_SCL Pin=U2-45
+Added Net: Name=MCU_SCL
+Added Pin To Net: NetName=MCU_SDA Pin=MOD1-3
+Added Pin To Net: NetName=MCU_SDA Pin=U2-46
+Added Net: Name=MCU_SDA
+Added Member To Class: ClassName=DMRobotSchematic Member=Component BT3 Nut Nhan 2 Chan SMD 3x6x2.5
+Added Member To Class: ClassName=DMRobotSchematic Member=Component MOD1 MOD MPU_6050

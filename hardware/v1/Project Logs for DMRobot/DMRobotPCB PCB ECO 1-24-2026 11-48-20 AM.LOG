@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=3.3V Pin=DS1-1
+Removed Pin From Net: NetName=GND Pin=DS1-2
+Removed Pin From Net: NetName=MCU_SCL Pin=DS1-3
+Removed Pin From Net: NetName=MCU_SDA Pin=DS1-4
+Removed Member From Class: ClassName=DMRobotSchematic Member=DS1
+Added Pin To Net: NetName=8.4V Pin=Q1-2

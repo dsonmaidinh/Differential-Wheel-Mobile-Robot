@@ -1,0 +1,7 @@
+Change Net Name : Old Net Name=NetC19_1 New Net Name=VDDA
+Added Member To Class: ClassName=DMRobotSchematic Member=Component BT1 cong tac bap benh
+Added Member To Class: ClassName=DMRobotSchematic Member=Component BT3 Nut Nhan 2 Chan SMD 3x6x2.5
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C4 22uf
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C6 103
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C28 22pF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C30 104

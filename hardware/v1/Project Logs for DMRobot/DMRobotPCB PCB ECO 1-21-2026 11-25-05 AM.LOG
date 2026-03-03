@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=VIN Pin=C26-1
+Removed Pin From Net: NetName=VIN Pin=C27-1
+Removed Pin From Net: NetName=VIN Pin=C34-1
+Removed Pin From Net: NetName=VIN Pin=C35-1
+Removed Pin From Net: NetName=VIN Pin=U3-5
+Removed Pin From Net: NetName=VIN Pin=U5-5
+Added Pin To Net: NetName=8.4V Pin=C26-1
+Added Pin To Net: NetName=8.4V Pin=C27-1
+Added Pin To Net: NetName=8.4V Pin=C34-1
+Added Pin To Net: NetName=8.4V Pin=C35-1
+Added Pin To Net: NetName=8.4V Pin=U3-5
+Added Pin To Net: NetName=8.4V Pin=U5-5

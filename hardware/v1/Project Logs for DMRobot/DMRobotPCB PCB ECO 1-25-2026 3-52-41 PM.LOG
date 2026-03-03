@@ -1,0 +1,45 @@
+Removed Pin From Net: NetName=MOTOR1_OUT2 Pin=R14-2
+Removed Pin From Net: NetName=MOTOR1_OUT1 Pin=R15-2
+Removed Pin From Net: NetName=MOTOR2_OUT2 Pin=R20-2
+Removed Pin From Net: NetName=MOTOR2_OUT1 Pin=R22-2
+Removed Pin From Net: NetName=MOTOR1_IN1 Pin=U3-2
+Removed Pin From Net: NetName=MOTOR1_IN2 Pin=U3-3
+Removed Pin From Net: NetName=MOTOR2_IN1 Pin=U5-2
+Removed Pin From Net: NetName=MOTOR2_IN2 Pin=U5-3
+Change Component Designator: OldDesignator=R21 NewDesignator=R20
+Change Component Designator: OldDesignator=R23 NewDesignator=R21
+Added Component: Designator=R23(tro smd 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH005230"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? 0805 5% 0R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MOTOR1_OUT2 Pin=M1-1
+Added Pin To Net: NetName=MOTOR1_OUT1 Pin=M1-2
+Added Pin To Net: NetName=MOTOR2_OUT2 Pin=M2-1
+Added Pin To Net: NetName=MOTOR2_OUT1 Pin=M2-2
+Added Pin To Net: NetName=MOTOR1_IN1 Pin=R14-1
+Added Pin To Net: NetName=MOTOR1_IN2 Pin=R15-1
+Added Pin To Net: NetName=MOTOR2_IN1 Pin=R22-1
+Added Pin To Net: NetName=MOTOR2_IN2 Pin=R23-1
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=NetR14_2 Pin=U3-2
+Added Net: Name=NetR14_2
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=U3-3
+Added Net: Name=NetR15_2
+Added Pin To Net: NetName=NetR22_2 Pin=R22-2
+Added Pin To Net: NetName=NetR22_2 Pin=U5-2
+Added Net: Name=NetR22_2
+Added Pin To Net: NetName=NetR23_2 Pin=R23-2
+Added Pin To Net: NetName=NetR23_2 Pin=U5-3
+Added Net: Name=NetR23_2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R14 0R
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R15 0R
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R17 5.1k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R18 30k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R19 10k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R20 10k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R23 0R
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R24 0R

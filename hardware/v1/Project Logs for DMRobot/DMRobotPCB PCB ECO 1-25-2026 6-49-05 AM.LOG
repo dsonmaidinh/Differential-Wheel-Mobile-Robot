@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Removed Pin From Net: NetName=GND Pin=ESP32-39
+Change Component Designator: OldDesignator=BOOT NewDesignator=BT3
+Change Component Designator: OldDesignator=E_M1 NewDesignator=H4
+Change Component Designator: OldDesignator=E_M2 NewDesignator=H6
+Change Component Designator: OldDesignator=EN NewDesignator=BT2
+Change Component Designator: OldDesignator=ESP32 NewDesignator=*1
+Change Component Designator: OldDesignator=ESP NewDesignator=H1
+Change Component Designator: OldDesignator=I2C NewDesignator=MOD1
+Change Component Designator: OldDesignator=M1 NewDesignator=H5
+Change Component Designator: OldDesignator=M2 NewDesignator=H3
+Change Component Designator: OldDesignator=RST NewDesignator=BT4
+Change Component Designator: OldDesignator=STM32 NewDesignator=U2
+Change Component Designator: OldDesignator=STM NewDesignator=H2
+Change Component Description : Designator=E1 Old Description=EMI Ferrite Chip Bead, 0805, 800MA, 120Ohms @100MHz, DCR Max 0.150Ohm New Description=EMI Ferrite Chip Bead, 0805, 800MA, 120Ohms @100MHz, DCR Max 0.150Ohm | Laird Performance Materials LI0805H121R-10
+Added Component: Designator=1(TP1)
+Add component (AddParameter): Name = "Value"; Value = "Test Point"; VariantName = "[No Variations]"
+Added Component: Designator=2(TP1)
+Add component (AddParameter): Name = "Value"; Value = "Test Point"; VariantName = "[No Variations]"
+Added Component: Designator=3(TP1)
+Add component (AddParameter): Name = "Value"; Value = "Test Point"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3.3V Pin=1-1
+Added Pin To Net: NetName=3.3V Pin=2-1
+Added Pin To Net: NetName=3.3V Pin=3-1
+Added Member To Class: ClassName=DMRobotSchematic Member=Component 1 TP
+Added Member To Class: ClassName=DMRobotSchematic Member=Component 2 TP
+Added Member To Class: ClassName=DMRobotSchematic Member=Component 3 TP
+Added Member To Class: ClassName=DMRobotSchematic Member=Component D1 ZENER 3.3V
+Added Member To Class: ClassName=DMRobotSchematic Member=Component D2 BZT52H-C3V3
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H3 MOTOR
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H5 MOTOR
+Added Member To Class: ClassName=DMRobotSchematic Member=Component J1 TYPE-C-31-M-12
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U2 STM32F100xx_LQFP64
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U3 DRV8871DDARQ1
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U5 DRV8871DDARQ1

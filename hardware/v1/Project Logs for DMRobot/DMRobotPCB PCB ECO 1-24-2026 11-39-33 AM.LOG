@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=MCU_INT Pin=U2-57
+Added Pin To Net: NetName=NetF1_2 Pin=Q1-2
+Added Pin To Net: NetName=MCU_INT Pin=U2-2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C6 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C8 100uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C10 105
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C14 226
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C18 106
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C19 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C31 22pF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C33 22uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U2 STM32F100xx_LQFP64

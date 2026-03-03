@@ -1,0 +1,19 @@
+Change Component Footprint: Designator=H3 Old Footprint=Header 2P DC 2.54 New Footprint=XH2.54M-2
+Change Component Footprint: Designator=H5 Old Footprint=Header 2P DC 2.54 New Footprint=XH2.54M-2
+Change Component Comment : Designator=H3 Old Comment=Header 2P 2.54 Duc Cong New Comment=MOTOR
+Change Component Comment : Designator=H5 Old Comment=Header 2P 2.54 Duc Cong New Comment=MOTOR
+Change component parameters: Designator = "H3" ("H3"); Footprint = "Header 2P DC 2.54"; UniqueID = "\HUNFTLRG" ("\HUNFTLRG")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH001283"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 2P XH2.54-2P Ð?c Th?ng"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H5" ("H5"); Footprint = "Header 2P DC 2.54"; UniqueID = "\AGBDJDSJ" ("\AGBDJDSJ")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH001283"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 2P XH2.54-2P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF1_2 Pin=Q1-2

@@ -1,0 +1,41 @@
+Change Component Designator: OldDesignator=C1 NewDesignator=C17
+Change Component Designator: OldDesignator=C2 NewDesignator=C18
+Change Component Designator: OldDesignator=C3 NewDesignator=C19
+Change Component Designator: OldDesignator=C4 NewDesignator=C1
+Change Component Designator: OldDesignator=C5 NewDesignator=C2
+Change Component Designator: OldDesignator=C6 NewDesignator=C3
+Change Component Designator: OldDesignator=C7 NewDesignator=C4
+Change Component Designator: OldDesignator=C8 NewDesignator=C5
+Change Component Designator: OldDesignator=C9 NewDesignator=C6
+Change Component Designator: OldDesignator=C10 NewDesignator=C7
+Change Component Designator: OldDesignator=C11 NewDesignator=C8
+Change Component Designator: OldDesignator=C12 NewDesignator=C9
+Change Component Designator: OldDesignator=C13 NewDesignator=C10
+Change Component Designator: OldDesignator=C14 NewDesignator=C11
+Change Component Designator: OldDesignator=C15 NewDesignator=C12
+Change Component Designator: OldDesignator=C16 NewDesignator=C13
+Change Component Designator: OldDesignator=C17 NewDesignator=C14
+Change Component Designator: OldDesignator=C18 NewDesignator=C15
+Change Component Designator: OldDesignator=C19 NewDesignator=C16
+Change Component Designator: OldDesignator=C30 NewDesignator=C32
+Change Component Designator: OldDesignator=C31 NewDesignator=C33
+Change Component Designator: OldDesignator=C32 NewDesignator=C34
+Change Component Designator: OldDesignator=C33 NewDesignator=C30
+Change Component Designator: OldDesignator=C34 NewDesignator=C31
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Change Component Designator: OldDesignator=U2 NewDesignator=U1
+Added Component: Designator=DS1(LCD_OLED_128X64_1.3_I2C)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/OLED%20128x64%201.3%22%20I2C/UNIVERSAL-SOLDER+Electronics+Ltd/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNIVERSAL-SOLDER Electronics Ltd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "OLED 128x64 1.3&quot; I2C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/OLED%20128x64%201.3%22%20I2C/UNIVERSAL-SOLDER+Electronics+Ltd/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3.3V Pin=DS1-1
+Added Pin To Net: NetName=GND Pin=DS1-2
+Added Pin To Net: NetName=MCU_SCL Pin=DS1-3
+Added Pin To Net: NetName=MCU_SDA Pin=DS1-4
+Added Pin To Net: NetName=8.4V Pin=Q1-2
+Change Net Name : Old Net Name=NetC13_1 New Net Name=NetC10_1
+Change Net Name : Old Net Name=NetC14_2 New Net Name=NetC11_2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component DS1 OLED_128X64_1.3_I2C

@@ -1,0 +1,19 @@
+Change Component Designator: OldDesignator=BOOT NewDesignator=BOOT1
+Change Component Designator: OldDesignator=EN NewDesignator=EN1
+Change Component Designator: OldDesignator=ESP NewDesignator=ESP1
+Change Component Designator: OldDesignator=ESP_FLASH NewDesignator=ESP_FLASH1
+Change Component Designator: OldDesignator=I2C NewDesignator=I1
+Change Component Designator: OldDesignator=M1 NewDesignator=M2
+Change Component Designator: OldDesignator=M2 NewDesignator=M1
+Change Component Designator: OldDesignator=RST NewDesignator=RST1
+Change Component Designator: OldDesignator=STM NewDesignator=STM1
+Change Component Designator: OldDesignator=STM_FLASH NewDesignator=STM_FLASH1
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Added Component: Designator=U1(XCVR_ESP32-S3-WROOM-1-N4)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Espressif Systems'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESP32-S3-WROOM-1-N4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U2 MP2307DN-HW-LF-P

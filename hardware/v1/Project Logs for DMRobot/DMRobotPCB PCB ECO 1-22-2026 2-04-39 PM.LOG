@@ -1,0 +1,26 @@
+Add Component: Footprint Not Found SOIC16_50_284_25X90_SMT
+Add Pin To Net: Unknown Pin: Pin U4-2
+Add Pin To Net: Unknown Pin: Pin U4-3
+Add Pin To Net: Unknown Pin: Pin U4-4
+Add Pin To Net: Unknown Pin: Pin U4-5
+Add Pin To Net: Unknown Pin: Pin U4-6
+Add Pin To Net: Unknown Pin: Pin U4-13
+Add Pin To Net: Unknown Pin: Pin U4-14
+Add Pin To Net: Unknown Pin: Pin U4-16
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C5 22uf
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C8 100uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C21 106
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C22 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C23 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C24 22uF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C26 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C27 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C28 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C29 104
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H4 MOTOR
+Added Member To Class: ClassName=DMRobotSchematic Member=Component H5 ENCODER
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R15 5.1k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R16 5.1k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R17 30k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R18 10k
+Add Class Member: Failed to add class member : Component U4 CH340C

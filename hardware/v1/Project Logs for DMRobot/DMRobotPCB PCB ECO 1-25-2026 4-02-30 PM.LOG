@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=3.3V Pin=ENC1-1
+Removed Pin From Net: NetName=GND Pin=ENC1-4
+Removed Pin From Net: NetName=3.3V Pin=ENC2-1
+Removed Pin From Net: NetName=GND Pin=ENC2-4
+Added Pin To Net: NetName=GND Pin=ENC1-1
+Added Pin To Net: NetName=3.3V Pin=ENC1-4
+Added Pin To Net: NetName=GND Pin=ENC2-1
+Added Pin To Net: NetName=3.3V Pin=ENC2-4
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R20 10k
+Added Member To Class: ClassName=DMRobotSchematic Member=Component R23 0R

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=MOTOR1_IN1 Pin=JP1-1
+Removed Pin From Net: NetName=MOTOR1_IN2 Pin=JP2-1
+Removed Pin From Net: NetName=MOTOR2_IN1 Pin=JP3-1
+Removed Pin From Net: NetName=MOTOR2_IN2 Pin=JP4-1
+Removed Member From Class: ClassName=DMRobotSchematic Member=JP1
+Removed Member From Class: ClassName=DMRobotSchematic Member=JP2
+Removed Member From Class: ClassName=DMRobotSchematic Member=JP3
+Removed Member From Class: ClassName=DMRobotSchematic Member=JP4

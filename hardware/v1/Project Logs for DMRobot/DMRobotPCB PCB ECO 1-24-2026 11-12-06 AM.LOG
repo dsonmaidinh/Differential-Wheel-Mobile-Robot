@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=MOTOR2_IN2 Pin=U1-22
+Removed Pin From Net: NetName=MOTOR2_IN1 Pin=U1-23
+Removed Pin From Net: NetName=MOTOR1_IN2 Pin=U1-26
+Removed Pin From Net: NetName=MOTOR1_IN1 Pin=U1-27
+Removed Pin From Net: NetName=ENCODER2_IN1 Pin=U1-37
+Removed Pin From Net: NetName=ENCODER2_IN2 Pin=U1-38
+Removed Pin From Net: NetName=ENCODER1_IN1 Pin=U1-41
+Removed Pin From Net: NetName=ENCODER1_IN2 Pin=U1-42
+Added Pin To Net: NetName=NetF1_2 Pin=Q1-2
+Added Pin To Net: NetName=MOTOR1_IN2 Pin=U1-22
+Added Pin To Net: NetName=MOTOR1_IN1 Pin=U1-23
+Added Pin To Net: NetName=MOTOR2_IN2 Pin=U1-26
+Added Pin To Net: NetName=MOTOR2_IN1 Pin=U1-27
+Added Pin To Net: NetName=ENCODER1_IN1 Pin=U1-37
+Added Pin To Net: NetName=ENCODER1_IN2 Pin=U1-38
+Added Pin To Net: NetName=ENCODER2_IN1 Pin=U1-41
+Added Pin To Net: NetName=ENCODER2_IN2 Pin=U1-42

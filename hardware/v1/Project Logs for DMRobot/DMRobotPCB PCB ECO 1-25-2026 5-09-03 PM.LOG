@@ -1,0 +1,3 @@
+Change Component Designator: OldDesignator=EN NewDesignator=\
+Change Component Designator: OldDesignator=ESP_FLASH NewDesignator=ESP_FLASH1
+Change Component Designator: OldDesignator=STM_FLASH NewDesignator=STM_FLASH1

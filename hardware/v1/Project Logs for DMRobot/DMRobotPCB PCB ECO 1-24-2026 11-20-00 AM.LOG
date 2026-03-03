@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=8.4V Pin=Q1-2
+Added Pin To Net: NetName=MCU_ERR_LED Pin=U1-50
+Added Pin To Net: NetName=MCU_WIFI_LED Pin=U1-51
+Added Pin To Net: NetName=MCU_RUN_LED Pin=U1-52
+Added Pin To Net: NetName=MCU_SCL Pin=U1-58
+Added Pin To Net: NetName=MCU_SDA Pin=U1-59

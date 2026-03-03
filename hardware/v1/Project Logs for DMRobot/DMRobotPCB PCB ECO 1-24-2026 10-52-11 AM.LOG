@@ -1,0 +1,94 @@
+Removed Pin From Net: NetName=3.3V Pin=U3-1
+Removed Pin From Net: NetName=MCU_INT Pin=U3-2
+Removed Pin From Net: NetName=MCU_OSCIN Pin=U3-5
+Removed Pin From Net: NetName=MCU_OSCOUT Pin=U3-6
+Removed Pin From Net: NetName=MCU_nRESET Pin=U3-7
+Removed Pin From Net: NetName=GND Pin=U3-8
+Removed Pin From Net: NetName=VDDA Pin=U3-9
+Removed Pin From Net: NetName=MOTOR1_IN2 Pin=U3-10
+Removed Pin From Net: NetName=MOTOR1_IN1 Pin=U3-11
+Removed Pin From Net: NetName=MOTOR2_IN2 Pin=U3-12
+Removed Pin From Net: NetName=MOTOR2_IN1 Pin=U3-13
+Removed Pin From Net: NetName=ENCODER1_IN2 Pin=U3-16
+Removed Pin From Net: NetName=ENCODER1_IN1 Pin=U3-17
+Removed Pin From Net: NetName=GND Pin=U3-23
+Removed Pin From Net: NetName=3.3V Pin=U3-24
+Removed Pin From Net: NetName=ENCODER2_IN1 Pin=U3-29
+Removed Pin From Net: NetName=ENCODER2_IN2 Pin=U3-30
+Removed Pin From Net: NetName=MCU_SWDIO Pin=U3-34
+Removed Pin From Net: NetName=GND Pin=U3-35
+Removed Pin From Net: NetName=3.3V Pin=U3-36
+Removed Pin From Net: NetName=MCU_SWCLK Pin=U3-37
+Removed Pin From Net: NetName=MCU_ERR_LED Pin=U3-38
+Removed Pin From Net: NetName=MCU_WIFI_LED Pin=U3-39
+Removed Pin From Net: NetName=MCU_RUN_LED Pin=U3-40
+Removed Pin From Net: NetName=ESP_RX Pin=U3-42
+Removed Pin From Net: NetName=ESP_TX Pin=U3-43
+Removed Pin From Net: NetName=MCU_BOOT0 Pin=U3-44
+Removed Pin From Net: NetName=MCU_SCL Pin=U3-45
+Removed Pin From Net: NetName=MCU_SDA Pin=U3-46
+Removed Pin From Net: NetName=GND Pin=U3-47
+Removed Pin From Net: NetName=3.3V Pin=U3-48
+Change Component Designator: OldDesignator=C1 NewDesignator=C4
+Change Component Designator: OldDesignator=C2 NewDesignator=C5
+Change Component Designator: OldDesignator=C3 NewDesignator=C6
+Change Component Designator: OldDesignator=C4 NewDesignator=C7
+Change Component Designator: OldDesignator=C5 NewDesignator=C8
+Change Component Designator: OldDesignator=C6 NewDesignator=C9
+Change Component Designator: OldDesignator=C7 NewDesignator=C10
+Change Component Designator: OldDesignator=C8 NewDesignator=C11
+Change Component Designator: OldDesignator=C9 NewDesignator=C12
+Change Component Designator: OldDesignator=C10 NewDesignator=C13
+Change Component Designator: OldDesignator=C11 NewDesignator=C14
+Change Component Designator: OldDesignator=C12 NewDesignator=C15
+Change Component Designator: OldDesignator=C13 NewDesignator=C16
+Change Component Designator: OldDesignator=C14 NewDesignator=C17
+Change Component Designator: OldDesignator=C15 NewDesignator=C18
+Change Component Designator: OldDesignator=C16 NewDesignator=C19
+Change Component Designator: OldDesignator=C17 NewDesignator=C1
+Change Component Designator: OldDesignator=C18 NewDesignator=C2
+Change Component Designator: OldDesignator=C19 NewDesignator=C3
+Change Component Designator: OldDesignator=C25 NewDesignator=C26
+Change Component Designator: OldDesignator=C26 NewDesignator=C27
+Change Component Designator: OldDesignator=C27 NewDesignator=C28
+Change Component Designator: OldDesignator=C28 NewDesignator=C29
+Change Component Designator: OldDesignator=C29 NewDesignator=C30
+Change Component Designator: OldDesignator=C30 NewDesignator=C31
+Change Component Designator: OldDesignator=C31 NewDesignator=C32
+Change Component Designator: OldDesignator=C32 NewDesignator=C33
+Change Component Designator: OldDesignator=C33 NewDesignator=C34
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Change Component Designator: OldDesignator=U2 NewDesignator=U1
+Change Component Designator: OldDesignator=U4 NewDesignator=U3
+Change Component Designator: OldDesignator=U5 NewDesignator=U4
+Change Component Designator: OldDesignator=U6 NewDesignator=U5
+Added Component: Designator=C25(tu 0805)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004551"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? 0805 104-100nF 10% 50V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C25-1
+Added Pin To Net: NetName=3.3V Pin=C25-2
+Added Pin To Net: NetName=NetF1_2 Pin=Q1-2
+Added Pin To Net: NetName=3.3V Pin=U1-1
+Added Pin To Net: NetName=MCU_OSCIN Pin=U1-5
+Added Pin To Net: NetName=MCU_OSCOUT Pin=U1-6
+Added Pin To Net: NetName=MCU_nRESET Pin=U1-7
+Added Pin To Net: NetName=VDDA Pin=U1-13
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=3.3V Pin=U1-19
+Added Pin To Net: NetName=GND Pin=U1-31
+Added Pin To Net: NetName=3.3V Pin=U1-32
+Added Pin To Net: NetName=MCU_SWDIO Pin=U1-46
+Added Pin To Net: NetName=GND Pin=U1-47
+Added Pin To Net: NetName=3.3V Pin=U1-48
+Added Pin To Net: NetName=MCU_SWCLK Pin=U1-49
+Added Pin To Net: NetName=MCU_BOOT0 Pin=U1-60
+Added Pin To Net: NetName=GND Pin=U1-63
+Added Pin To Net: NetName=3.3V Pin=U1-64
+Change Net Name : Old Net Name=NetC10_1 New Net Name=NetC13_1
+Change Net Name : Old Net Name=NetC11_2 New Net Name=NetC14_2
+Added Member To Class: ClassName=DMRobotSchematic Member=Component C34 22pF
+Added Member To Class: ClassName=DMRobotSchematic Member=Component U2 MP2307DN-HW-LF-P
